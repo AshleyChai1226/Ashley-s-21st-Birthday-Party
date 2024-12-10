@@ -1,0 +1,726 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  overflow-y: visible;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.TopContainer{
+  display: flex;
+  flex-direction: column;
+}
+.MiddleContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BottomContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.background1 {
+  background-image: url("images/background.jpg");
+  background-size: 768px 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .background1,
+  .background2,
+  .background3 {
+    background-size: 100% 100%;
+  }
+}
+
+.uRInvited{
+  color: rgb(0, 0, 0);
+  font-size: 3.5vw;
+  font-family: "Nerko One";
+  font-weight: bold;
+  line-height: 4vw;
+}
+
+.Officially21{
+  color: rgb(255, 15, 107);
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
+  font-size: 10vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+  padding-top: 5vw;
+}
+
+.imageContainer {
+  display: inline-block; 
+  width: 35vw; 
+  height: 35vw;
+  border-radius: 50%; 
+  overflow: hidden; 
+  border: 5px solid white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin:3vw
+}
+
+.imageContainer img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+.name{
+  color: rgb(255, 194, 224);
+  -webkit-text-stroke-color: #2d0037;
+  -webkit-text-stroke-width: 1px;
+  font-size: 7vw;
+  font-family: cursive;
+  font-weight: bold;
+  line-height: 4vw;
+  padding-top: 6vw;
+}
+
+.desc{
+  color: rgb(0, 0, 0);
+  font-size: 3.5vw;
+  line-height: 4vw;
+  padding-top: 6vw;
+}
+
+.details{
+  color: rgb(0, 0, 0);
+  font-size: 3.5vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+}
+
+.details2{
+  color: rgb(0, 0, 0);
+  font-size: 3vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+  font-weight: bold;
+  padding-top: 2vw;
+}
+
+.details3{
+  color: rgb(0, 0, 0);
+  font-size: 2.7vw;
+  font-family: "Nerko One";
+}
+
+.details4{
+  color: rgb(0, 0, 0);
+  font-size: 2.2vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  font-weight: bold;
+}
+
+/* Default hidden state */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px); /* Elements start slightly offset */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Triggered animation (when visible in the viewport) */
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0); /* Reset position */
+}
+
+/* Custom animations */
+.uRInvited.animate {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.Officially21.animate {
+  animation: zoomIn 1s ease-out forwards;
+}
+
+.imageContainer img.animate {
+  animation: zoomIn 1.5s ease-out forwards;
+}
+
+.name.animate {
+  animation: slideInRight 1.2s ease-out forwards;
+}
+
+.desc.animate {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.details.animate,
+.details2.animate,
+.details3.animate,
+.details4.animate {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Keyframes for custom animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.background2 {
+  background-image: url("images/background4.jpg");
+  background-size: 768px 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.textContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.countdown {
+  font-size: 4.5vw;
+  color: #000;
+  font-weight: bold;
+  padding: 2vw;
+  background: linear-gradient(135deg, #000000, #ffcee2, #ff95b7, #ff006a);
+  color: white;
+  border-radius: 10vw;
+  margin-top: 3vw;
+}
+
+.calendar {
+  position: relative; 
+  display: inline-block; 
+}
+
+.calendar img {
+  display: block;
+  width: 70vw;
+  height: auto;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When element is visible */
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations for specific elements */
+.animate-h1.animate {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.animate-p.animate {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.animate-countdown.animate {
+  animation: zoomIn 1.5s ease-out forwards;
+}
+
+.animate-calendar.animate {
+  animation: slideInRight 1.5s ease-out forwards;
+}
+
+.animate-stickers.animate {
+  animation: bounceIn 1.5s ease-out forwards;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.imageContainer5 {
+  width: 5vw; 
+  height: 5vw; 
+  background-color: rgba(255, 77, 190, 0.4); 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: 16%;
+  left: 57.5%; 
+  transform: translate(-50%, -50%); 
+  pointer-events: none;
+}
+
+.background3 {
+  background-image: url("images/background3.jpg");
+  background-size: 768px 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.textContainer2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.Barbie {
+  color: rgb(255, 15, 107);
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
+  font-size: 5.9vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+  padding-bottom: 5vw;
+}
+
+.descriptionBarbie {
+  color: rgb(255, 0, 111);
+  font-size: 2.8vw;
+  font-family: "Nerko One";
+  font-weight: bold;
+  line-height: 4vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
+
+.descriptionBarbie2 {
+  color: rgb(54, 0, 13);
+  font-size: 2.2vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
+
+.imageContainer2,.imageContainer3 {
+  display: inline-block; 
+  width: 40vw; 
+  height: 50vw;
+  overflow: hidden; 
+  border: 5px solid white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin:3vw
+}
+
+.imageContainer2 img, .imageContainer4 img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+.imageContainer3 img {
+  width: 80%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+.Pool {
+  color: rgb(53, 125, 240);
+  font-size: 4.5vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+  padding-bottom: 3vw;
+}
+
+.poolDesc {
+  color: rgb(0, 9, 46);
+  font-size: 2.8vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+}
+
+.poolDesc2 {
+  color: rgb(0, 40, 128);
+  font-size: 2.2vw;
+  font-family: "Nerko One";
+  line-height: 4vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When element is visible */
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations for specific elements */
+.animate-barbie.animate {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-descriptionBarbie.animate {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.animate-descriptionBarbie2.animate {
+  animation: fadeInRight 1.2s ease-out forwards;
+}
+
+.animate-imageContainer2.animate {
+  animation: zoomIn 1.5s ease-out forwards;
+}
+
+.animate-imageContainer3.animate {
+  animation: zoomIn 1.5s ease-out 0.2s forwards;
+}
+
+.animate-pool.animate {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-poolDesc.animate {
+  animation: fadeInUp 1.2s ease-out 0.3s forwards;
+}
+
+.animate-poolDesc2.animate {
+  animation: fadeInUp 1.5s ease-out 0.5s forwards;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.background4 {
+  background-image: url("images/background5.jpg");
+  background-size: 768px 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.imageContainer4 {
+  display: inline-block; 
+  width: 50vw; 
+  height: 60vw;
+  overflow: hidden; 
+  border: 5px solid white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin:2vw
+}
+
+.textContainer3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.Christmas{
+  color: rgb(244, 0, 122);
+  -webkit-text-stroke-color: #2d0037;
+  -webkit-text-stroke-width: 1px;
+  font-size: 6.2vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 4vw;
+  padding-top: 6vw;
+}
+
+.DesChris{
+  color: rgb(0, 0, 0);
+  font-size: 2.8vw;
+  line-height: 4vw;
+  font-family:cursive;
+}
+
+/* Default hidden state for animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the element is visible */
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations for specific elements */
+.animate-christmas.animate {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-imageContainer4.animate {
+  animation: zoomIn 1.5s ease-out forwards;
+}
+
+.animate-desChris.animate {
+  animation: fadeInUp 1.2s ease-out 0.3s forwards;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.formContainer {
+  width: 100vw; /* Adjusts the width to 90% of the viewport width */
+  height: 100vh; /* Adjusts the height to 70% of the viewport height */
+ 
+}
+
+iframe {
+  width: 100%; 
+  height: 100%; 
+  border: none; 
+}
+
+.sound-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent; /* No background color */
+  border: none;
+  padding: 5px; /* Adjust padding as needed */
+  cursor: pointer;
+  z-index: 1000;
+  width: 5vw; 
+  height: 5vw; 
+}
+
+.sound-toggle img {
+  width: 4vw;
+  height: vw
+}
+
+.sound-toggle:hover {
+  opacity: 0.8; 
+}
