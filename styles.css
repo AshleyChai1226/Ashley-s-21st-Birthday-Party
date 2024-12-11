@@ -1,3 +1,66 @@
+@font-face {
+    font-family: 'ChristmasChances';
+    src: url('font/ChristmasChancesLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChristmasChancesHat';
+  src: url('font/ChristmasChancesHat.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blazeberg';
+  src: url('font/Blazeberg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BarbieDoll';
+  src: url('font/Barbie Doll.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BeautifulBarbies';
+  src: url('font/Beautiful-Barbies.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BirthdayFont';
+  src: url('font/Birthday.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Christmabet';
+  src: url('font/christmabet.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AustieBostHappyHolly';
+  src: url('font/Austie Bost Happy Holly.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BirthdayParty';
+  src: url('font/Birthday Party.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -113,8 +176,8 @@ html {
   color: rgb(255, 194, 224);
   -webkit-text-stroke-color: #2d0037;
   -webkit-text-stroke-width: 1px;
-  font-size: 7vw;
-  font-family: monospace;
+  font-size: 8vw;
+  font-family: 'BirthdayFont', cursive;
   font-weight: bold;
   line-height: 4vw;
   padding-top: 6vw;
@@ -125,12 +188,13 @@ html {
   font-size: 3.5vw;
   line-height: 4vw;
   padding-top: 6vw;
+  font-family: Helvetica;
 }
 
 .details{
   color: rgb(0, 0, 0);
   font-size: 3.5vw;
-  font-family: "Nerko One";
+  font-family: 'BirthdayParty', cursive;
   line-height: 4vw;
 }
 
@@ -275,6 +339,26 @@ html {
   padding-right: 5vw;
 }
 
+.CountdownH1{
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke-color: #ff3baa;
+  -webkit-text-stroke-width: 1px;
+  font-size: 7vw;
+  font-family: "Nerko One";
+  line-height: 8vw;
+  padding-bottom: 5vw;
+}
+
+.countdownDes{
+  color: rgb(33, 0, 14);
+  font-size: 2.6vw;
+  font-family: bradley hand ,cursive;
+  font-weight: bold;
+  line-height: 4vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
+
 .countdown {
   font-size: 4.5vw;
   color: #000;
@@ -415,24 +499,24 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
 }
 
 .Barbie {
   color: rgb(255, 15, 107);
   -webkit-text-stroke-color: #000;
-  -webkit-text-stroke-width: 1px;
-  font-size: 5.9vw;
-  font-family: "Nerko One";
+  -webkit-text-stroke-width: 0.1px;
+  font-size: 8.2vw;
+  font-family: 'BeautifulBarbies', serif;
   line-height: 4vw;
   padding-bottom: 5vw;
 }
 
 .descriptionBarbie {
   color: rgb(255, 0, 111);
-  font-size: 2.8vw;
-  font-family: "Nerko One";
+  font-size: 3.1vw;
+  font-family: bradley hand ,cursive;
   font-weight: bold;
   line-height: 4vw;
   padding-right: 8vw;
@@ -441,9 +525,10 @@ html {
 
 .descriptionBarbie2 {
   color: rgb(54, 0, 13);
-  font-size: 2.2vw;
+  font-size: 3.1vw;
   font-family: "Nerko One";
   line-height: 4vw;
+  padding-top: 2vw;
   padding-right: 8vw;
   padding-left: 8vw;
 }
@@ -472,23 +557,24 @@ html {
 
 .Pool {
   color: rgb(53, 125, 240);
-  font-size: 4.5vw;
-  font-family: "Nerko One";
+  font-size:5.5vw;
+  font-family: 'Blazeberg', sans-serif; 
   line-height: 4vw;
   padding-bottom: 3vw;
+  padding-top: 5vw;
 }
 
 .poolDesc {
   color: rgb(0, 9, 46);
-  font-size: 2.8vw;
+  font-size: 3vw;
   font-family: "Nerko One";
   line-height: 4vw;
 }
 
 .poolDesc2 {
   color: rgb(0, 40, 128);
-  font-size: 2.2vw;
-  font-family: "Nerko One";
+  font-size: 2.8vw;
+  font-family: bradley hand ,cursive;
   line-height: 4vw;
   padding-right: 5vw;
   padding-left: 5vw;
@@ -600,6 +686,7 @@ html {
   background-size: 768px 100%;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -611,7 +698,7 @@ html {
   overflow: hidden; 
   border: 5px solid white; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin:2vw
+  margin:5vw;
 }
 
 .textContainer3 {
@@ -619,29 +706,46 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   text-align: center;
 }
 
 .Christmas{
-  color: rgb(244, 0, 122);
-  -webkit-text-stroke-color: #2d0037;
-  -webkit-text-stroke-width: 1px;
-  font-size: 6.2vw;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 209, 235);
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 0.01px;
+  font-size: 7vw;
+  font-family: 'ChristmasChances', sans-serif;
   font-weight: bold;
   line-height: 4vw;
   padding-top: 6vw;
 }
 
 .DesChris{
-  color: rgb(0, 0, 0);
-  font-size: 3vw;
+  color: rgb(60, 0, 21);
+  font-size: 3.5vw;
   line-height: 4vw;
-  font-family:"Nerko One";
+  font-family: 'AustieBostHappyHolly', cursive;
+  position: relative; 
+  z-index: 2; 
   padding-left: 5vw;
   padding-right: 5vw;
 }
+
+.imageContainer6 {
+  position: absolute; 
+  bottom: 0; 
+  left: 10%; 
+  transform: translateX(-50%); 
+  z-index: 1; 
+}
+
+.imageContainer6 img{
+  width: 80vw;
+  height: 80vw;
+  opacity: 0.9; 
+}
+
 
 /* Default hidden state for animations */
 .animate-on-scroll {
@@ -709,9 +813,9 @@ iframe {
   position: fixed;
   top: 10px;
   right: 14px;
-  background-color: transparent; /* No background color */
+  background-color: transparent; 
   border: none;
-  padding: 5px; /* Adjust padding as needed */
+  padding: 5px; 
   cursor: pointer;
   z-index: 1000;
   width: 5vw; 
