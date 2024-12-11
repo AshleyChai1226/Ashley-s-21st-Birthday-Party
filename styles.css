@@ -149,7 +149,7 @@ html {
   color: rgb(255, 15, 107);
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1px;
-  font-size: 10vw;
+  font-size: 13vw;
   font-family: "Nerko One";
   line-height: 4vw;
   padding-top: 5vw;
@@ -157,8 +157,8 @@ html {
 
 .imageContainer {
   display: inline-block; 
-  width: 35vw; 
-  height: 35vw;
+  width: 38vw; 
+  height: 38vw;
   border-radius: 50%; 
   overflow: hidden; 
   border: 5px solid white; 
@@ -176,7 +176,7 @@ html {
   color: rgb(255, 194, 224);
   -webkit-text-stroke-color: #2d0037;
   -webkit-text-stroke-width: 1px;
-  font-size: 8vw;
+  font-size: 10vw;
   font-family: 'BirthdayFont', cursive;
   font-weight: bold;
   line-height: 4vw;
@@ -200,7 +200,7 @@ html {
 
 .details2{
   color: rgb(0, 0, 0);
-  font-size: 3vw;
+  font-size: 3.2vw;
   font-family: "Nerko One";
   line-height: 4vw;
   font-weight: bold;
@@ -209,13 +209,13 @@ html {
 
 .details3{
   color: rgb(0, 0, 0);
-  font-size: 2.7vw;
+  font-size: 3vw;
   font-family: "Nerko One";
 }
 
 .details4{
   color: rgb(0, 0, 0);
-  font-size: 2.2vw;
+  font-size: 2.5vw;
   font-family: "Nerko One";
   line-height: 4vw;
   padding-top: 5vw;
@@ -343,7 +343,7 @@ html {
   color: rgb(0, 0, 0);
   -webkit-text-stroke-color: #ff3baa;
   -webkit-text-stroke-width: 1px;
-  font-size: 7vw;
+  font-size: 8vw;
   font-family: "Nerko One";
   line-height: 8vw;
   padding-bottom: 5vw;
@@ -351,7 +351,7 @@ html {
 
 .countdownDes{
   color: rgb(33, 0, 14);
-  font-size: 2.6vw;
+  font-size: 2.8vw;
   font-family: bradley hand ,cursive;
   font-weight: bold;
   line-height: 4vw;
@@ -506,7 +506,7 @@ html {
 .Barbie {
   color: rgb(255, 15, 107);
   -webkit-text-stroke-color: #000;
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-width: 0.5px;
   font-size: 8.2vw;
   font-family: 'BeautifulBarbies', serif;
   line-height: 4vw;
@@ -515,7 +515,7 @@ html {
 
 .descriptionBarbie {
   color: rgb(255, 0, 111);
-  font-size: 3.1vw;
+  font-size: 3.5vw;
   font-family: bradley hand ,cursive;
   font-weight: bold;
   line-height: 4vw;
@@ -713,11 +713,11 @@ html {
 .Christmas{
   color: rgb(255, 209, 235);
   -webkit-text-stroke-color: #000000;
-  -webkit-text-stroke-width: 0.01px;
-  font-size: 7vw;
+  -webkit-text-stroke-width: 1px;
+  font-size: 10vw;
   font-family: 'ChristmasChances', sans-serif;
   font-weight: bold;
-  line-height: 4vw;
+  line-height: 7vw;
   padding-top: 6vw;
 }
 
